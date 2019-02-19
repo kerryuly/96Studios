@@ -1,0 +1,262 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900|Source+Sans+Pro:300,600');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('Fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('Fonts/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'geomanistregular';
+    src: url('Fonts/geomanist-regular-webfont.eot');
+    src: url('Fonts/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/geomanist-regular-webfont.woff2') format('woff2'),
+         url('Fonts/geomanist-regular-webfont.woff') format('woff'),
+         url('Fonts/geomanist-regular-webfont.ttf') format('truetype'),
+         url('Fonts/geomanist-regular-webfont.svg#geomanistregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+    font-family: "gilroyextrabold";
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+}
+
+/*################## NAVBAR #####################*/
+.navbar{
+    display: flex;
+    padding-right: 0;
+    margin-right: 0;
+
+}
+.navbar-brand {
+    margin: 0;
+    width: 100%;
+    color: black;
+
+}
+
+.nav-link{
+    padding-left: 0px;
+    color: black;
+    font-weight: 300;
+}
+
+
+
+
+/*############ Landing ####################*/
+.landing{
+    position: relative;
+    background: #fff;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    padding: 2.5rem;
+    padding-top: 0;
+}
+
+.left{
+    
+    height: 91vh;
+    justify-content: center;
+    align-self: center;
+    text-align: left;
+    color: black;
+    font-size: 15rem;
+    line-height: 13rem;
+
+    background: rgb(255, 74, 74);
+}
+
+.site-title{
+    top: 20%;
+}
+
+
+
+/* RIIIIIIIIIIIIIIIIIIIIGHT */
+
+
+
+
+.right{
+
+    background: rgb(245, 245, 245) ;
+}
+div.row.right{
+    height: 100%;
+}
+
+div.tag-line{
+    top: 20%;
+    text-align: left;
+    margin:0;
+    padding: 0;
+    margin-left: 2rem;
+    
+}
+
+h3{
+    top: 15%;
+    font-size: 6rem;
+}
+.social{
+    top: 50%;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    margin-left: 2rem;
+    background-color:white;
+    max-height: 8rem;
+    max-width: 3rem;
+}
+
+
+.social-icons, .icon-links{
+    padding-top: 1.5rem; 
+    color:#000;
+    list-style: none;
+    text-decoration: none;
+}
+
+div.li.icon-links{
+    list-style: none;
+}
+
+
+/* ABOUT */
+
+.about{
+    position: relative;
+    background-color: blueviolet;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    justify-content: center;
+
+}
+
+
+
+
+.headshot-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 0;
+    
+}
+
+
+.headshot{
+    max-width: 300px;
+    width: 100%;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/* ############################################### ANIMATIONS ########################################### */
+
+
+@keyframes moveInRight{
+
+    0%{
+        opacity: 0;
+        transform: translateX(-60px)
+    } 
+
+
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+
+@keyframes moveInLeft{
+
+    0%{
+        opacity: 0;
+        transform: translateX(60px)
+    } 
+
+
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.numbers, .dios{
+    animation-name: moveInRight;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+}
+.stu{
+    animation-name: moveInLeft;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+}
+
+
+.tag1, .tag2 { 
+    animation-name: moveUp;
+    animation-duration: .5s;
+    animation-delay: .7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+.tag2{
+    animation-duration: .9s;
+    animation-delay: 1.2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveUp{
+
+    0%{
+        opacity: 0;
+        transform: translateY(30px)
+    } 
+
+
+    100%{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+
+
+/* ######################## Mobile Compatibility ######################## */
+
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    div.example {
+      font-size: 80px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    div.example {
+      font-size: 30px;
+    }
+  }
