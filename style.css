@@ -70,20 +70,17 @@ html, body{
 }
 
 .left{
-    
     height: 91vh;
-    justify-content: center;
-    align-self: center;
-    text-align: left;
+    text-align: center;
     color: black;
     font-size: 15rem;
     line-height: 13rem;
-
     background: rgb(255, 74, 74);
 }
 
 .site-title{
     top: 20%;
+    text-align: left;
 }
 
 
