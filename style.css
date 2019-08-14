@@ -37,25 +37,33 @@ html, body{
 
 /*################## NAVBAR #####################*/
 .navbar{
-    display: flex;
+    /* display: flex; */
     padding-right: 0;
     margin-right: 0;
 
 }
 .navbar-brand {
-    margin: 0;
-    width: 100%;
+    margin-left: 3rem;
+    margin-right: 37.2vw;
     color: black;
-
 }
 
 .nav-link{
-    padding-left: 0px;
+    padding-left: 2rem;
     color: black;
     font-weight: 300;
+    
 }
 
+.mr-auto{
+    margin-left: 3rem;
+    color: black;
+    margin-right: 12vw; 
+}
 
+.fa-bars {
+    margin-right: 5.2rem;
+}
 
 
 /*############ Landing ####################*/
@@ -64,13 +72,15 @@ html, body{
     background: #fff;
     width: 100%;
     min-height: 100%;
-    overflow: hidden;
     padding: 2.5rem;
     padding-top: 0;
 }
 
-.left{
-    height: 91vh;
+.row.landing{
+    height: 92vh;
+}
+
+div.left.col-sm-12.col-lg-6{
     text-align: center;
     color: black;
     font-size: 15rem;
@@ -81,6 +91,9 @@ html, body{
 .site-title{
     top: 20%;
     text-align: left;
+    padding: 0 !important;
+    margin-right: 0 !important;
+    
 }
 
 
@@ -88,14 +101,13 @@ html, body{
 /* RIIIIIIIIIIIIIIIIIIIIGHT */
 
 
-
-
 .right{
 
-    background: rgb(245, 245, 245) ;
+    background: rgb(233, 233, 233) ;
 }
 div.row.right{
     height: 100%;
+    text-align: center;
 }
 
 div.tag-line{
@@ -104,6 +116,7 @@ div.tag-line{
     margin:0;
     padding: 0;
     margin-left: 2rem;
+    display: block;
     
 }
 
@@ -244,16 +257,17 @@ div.li.icon-links{
 /* ######################## Mobile Compatibility ######################## */
 
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-    div.tag-line {
-      font-size: 80px;
+  @media screen and (max-width: 1596px) {
+      div.site-title {
+        font-size: 16vw;
+        line-height: 13vw;
+        /* top: 7vw; */
+      }
     }
-  }
-  
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-  @media screen and (max-width: 600px) {
-    div.tag-line {
-      font-size: 30px;
+
+  @media screen and (max-width: 1596px) {
+    .tag1, .tag2 {
+        font-size: 7vw;
+        line-height: 7vw;
     }
   }
